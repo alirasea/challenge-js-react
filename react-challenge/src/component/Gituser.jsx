@@ -8,7 +8,7 @@ export default function Gituser() {
     const [repo, setRepo] = useState([]);
     const [error, setError] = useState('');
 
-    const defaultUsername = 'alirasea';
+
 
     const fetchData = async (username) => {
         try {
@@ -65,12 +65,7 @@ export default function Gituser() {
                     ))}
                 </div>
             )}
-            {username === defaultUsername && (
-                <div>
-                    <p>You entered the default username.</p>
-                    {/* Render additional content here for the default username */}
-                </div>
-            )}
+           
             {error && <p>{error}</p>}
         </div>
     );
